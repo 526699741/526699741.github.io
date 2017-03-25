@@ -1,0 +1,56 @@
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.clearfix:after{
+    display:block;
+    content:"";
+    clear:both;
+}
+.fl{
+    float:left;
+
+}
+.fr{
+    float:right;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size:12px;
+    font-weight:normal;
+    color:black;
+}
+a{
+    text-decoration:none;
+    color:black;
+}
+i,em,strong,b{
+    font-style: normal;
+    font-weight:normal;
+}
+img{
+    display:block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
