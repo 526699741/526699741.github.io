@@ -5,17 +5,38 @@
     <title>我的主页</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/index.css">
-    <script></script>
+    <script src="js/vue1.0.26.js"></script>
+    <script src="js/index.js"></script>
 </head>
 <body>
     <header>
+        <h1>
+            <img src="111.jpg" alt="">
+            <div>
+                <p></p>
+                <p></p>
+            </div>
+        </h1>
         <nav>
             <ul>
-                <li><a href="html/project/index.html">冰川(运用了JQ CSS3 HTML5)</a></li>
+                <li v-for="v in head"><a :href="v.href">{{v.cont}}</a></li>
             </ul>
         </nav>
     </header>
-    <section></section>
-    <footer></footer>
+    <section>
+        <!--五个板块内容-->
+        <div class="content1"></div>
+        <div class="content2"></div>
+        <div class="content3"></div>
+        <div class="content4"></div>
+        <div class="content5"></div>
+        <!--在可视区定位的点选器-->
+        <ul>
+            <li></li>
+        </ul>
+    </section>
+    <footer>
+        <!--尾部 -->
+    </footer>
 </body>
 </html>

@@ -1,0 +1,34 @@
+
+@mixin pos($position){
+  position:$position;
+}
+@mixin marginL($left){
+  margin-left:$left;
+}
+@mixin marginR($right){
+  margin-right:$right;
+}
+@mixin marginT($top){
+  margin-top:$top;
+}
+@mixin marginB($bottom){
+  margin-bottom:$bottom;
+}
+@mixin borderR($radius){
+  border-radius:$radius;
+}
+@mixin banner(){
+  margin:0 auto;
+}
+.inner{
+  width: 1190px;
+}
+body{
+  background:#fff;
+  width:100%;
+}
+header{
+  @extend .inner;
+  background:red;
+  @include banner();
+}
