@@ -1,34 +1,78 @@
 
-@mixin pos($position){
-  position:$position;
+
+@import "base";
+
+
+html, body {
+  position: relative;
+  height: 100%;
 }
-@mixin marginL($left){
-  margin-left:$left;
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif ;
+  font-size: 14px;
+  color:#000;
+  margin: 0;
+  padding: 0;
 }
-@mixin marginR($right){
-  margin-right:$right;
+.swiper-container {
+  width: 100%;
+  height: 100%;
 }
-@mixin marginT($top){
-  margin-top:$top;
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
-@mixin marginB($bottom){
-  margin-bottom:$bottom;
-}
-@mixin borderR($radius){
-  border-radius:$radius;
-}
-@mixin banner(){
-  margin:0 auto;
-}
-.inner{
-  width: 1190px;
-}
-body{
-  background:#fff;
-  width:100%;
-}
+
+
 header{
-  @extend .inner;
-  background:red;
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  background: #dbffe7;
   @include banner();
+  @extend .clearfix;
+  h1{
+    @extend .fl;
+  }
+  nav{
+    ul{
+      @extend .fr;
+      li{
+        @extend .fl;
+        @include marginR(20px);
+      }
+    }
+  }
+}
+.swiper-pagination-bullet{
+  width: 100px;
+  height: 100px;
+}
+.cont1{
+  ul{
+    li{
+      line-height:50px;
+      h2{
+        font-size:20px;
+        color:#999;
+      }
+    }
+  }
 }

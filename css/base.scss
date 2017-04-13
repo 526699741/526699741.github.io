@@ -1,0 +1,59 @@
+
+*{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.clearfix:after{
+  display:block;
+  content:"";
+  clear:both;
+}
+.fl{
+  float:left;
+
+}
+.fr{
+  float:right;
+}
+.inner{
+  width: 1190px;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-size:12px;
+  font-weight:normal;
+  color:black;
+}
+a{
+  text-decoration:none;
+  color:black;
+}
+i,em,strong,b{
+  font-style: normal;
+  font-weight:normal;
+}
+img{
+  display:block;
+}
+@mixin pos($xxx){
+  position:$xxx;
+}
+@mixin marginL($xxx){
+  margin-left:$xxx;
+}
+@mixin marginR($xxx){
+  margin-right:$xxx;
+}
+@mixin marginT($xxx){
+  margin-top:$xxx;
+}
+@mixin marginB($xxx){
+  margin-bottom:$xxx;
+}
+@mixin borderR($xxx){
+  border-radius:$xxx;
+}
+@mixin banner(){
+  margin:0 auto;
+}
