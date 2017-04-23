@@ -8,7 +8,7 @@ new Vue({
         "top":[
             {"href":"#cont2","cont":"首页"},
             {"href":"html/project/index.html","cont":"关于我"},
-            {"href":"html/project/index.html","cont":"作品"},
+            {"href":"html/yipao-project/dist/index.html","cont":"益跑"},
             {"href":"html/project/index.html","cont":"技能"},
             {"href":"html/project/index.html","cont":"联系我"}
         
