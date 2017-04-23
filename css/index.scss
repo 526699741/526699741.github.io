@@ -38,7 +38,11 @@ body {
   -webkit-align-items: center;
   align-items: center;
 }
-
+.swiper-pagination-bullet{
+  width: 100px;
+  height: 100px;
+  background:red;
+}
 
 header{
   position:fixed;
@@ -75,4 +79,20 @@ header{
       }
     }
   }
+}
+.last1,.last2{
+  width: 100%;
+  text-align:center;
+  position:fixed;
+  left:0;
+  color:red;
+  font-size:20px;
+}
+.last1{
+  top:0;
+  @include marginT(50px);
+}
+.last2{
+  bottom:0;
+  @include marginB(50px);
 }

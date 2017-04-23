@@ -7,45 +7,6 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/swiper.min.css">
 
-    <style>
-        html, body {
-            position: relative;
-            height: 100%;
-        }
-        body {
-            background: #eee;
-            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-            font-size: 14px;
-            color:#000;
-            margin: 0;
-            padding: 0;
-        }
-        .swiper-container {
-            width: 100%;
-            height: 100%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-
-            /* Center slide text vertically */
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center;
-            align-items: center;
-        }
-    </style>
 </head>
 <body>
 <!-- npm dev build  会出现一个dest文件包，直接扔服务器-->
@@ -64,7 +25,7 @@
                         </div>
                     </h1>
                     <nav>
-                        <ul   id="app">
+                        <ul>
                             <li v-for="v in top"><a :href="v.href">{{v.cont}}</a></li>
                         </ul>
                     </nav>
@@ -73,14 +34,28 @@
                 <ul>
                     <li><img src="1.jpg" alt=""></li>
                     <li>
-                        <ol id="app2">
+                        <ol>
                             <li v-for="v in content">{{v.title}}</li>
                         </ol>
                     </li>
                 </ul>
             </div>
-            <div class="swiper-slide cont2">about me</div>
-            <div class="swiper-slide cont3">project</div>
+            <div class="swiper-slide cont2" id=cont2>
+                <ul>
+                    <li>123</li>
+                    <li>标记</li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="swiper-slide cont3">
+                <ul>
+                    <li>我的项目</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ul>
+            </div>
             <div class="swiper-slide cont4">skill</div>
             <div class="swiper-slide cont5">call me</div>
         </div>
@@ -90,13 +65,15 @@
     <!-- Swiper JS -->
     <script src="js/swiper.min.js"></script>
     <!-- Initialize Swiper -->
-    <script>
-
-    </script>
-
     <!-- vue and change-->
     <script src="js/vue2.2.6.js"></script>
     <script src="js/index.js"></script>
     <!--vue.js-->
+    <div class="last1">
+        上面什么也没有
+    </div>
+    <div class="last2">
+        别拽了~都被你看光了
+    </div>
 </body>
 </html>
