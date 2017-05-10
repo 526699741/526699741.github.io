@@ -1,34 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    
-
+	<meta charset="UTF-8">
+	<title>纯css3手风琴效果</title>
+	<style>
+		.main {
+			width: 50%;
+			margin:50px auto;
+		}
+		.menu a {
+			display: inline-block;
+			padding:5px 0 5px 10px;
+			text-decoration: none;
+			width: 100%;
+			background: #e16b47;
+		}
+		.menu p {
+			height: 0;
+			overflow: hidden;
+			transition: height 0.5s ease-in;
+		}
+		:target p {
+			height: 100px;
+			transition: height 0.5s ease-in;
+		}
+	</style>
 </head>
 <body>
-    <div id="box">
-        <ul>
-            <li v-for="v in arr">{{v.a}},,,,{{$key}}</li>
-        </ul>
-        <input type="button" name="" value="" v-on:dblclick="show">
-    </div>
-    <script src="js/vue2.2.6.js"></script>
-    <script>
-        var vm=new Vue({
-            el:"#box",
-            data:{
-                arr:[{a:1},{a:2}]
-            },
-            methods:{
-                show:function(){
-                    alert(1);
-                }
-
-            }
-        });
-    </script>
+    <div class="main">
+		<div class="menu" id="brand">
+			<h2>
+				<a href="#brand">brand</a>
+			</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+			</p>
+		</div>
+		<div class="menu" id="pro">
+			<h2>
+				<a href="#pro">pro</a>
+			</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			</p>
+		</div>
+		<div class="menu" id="event">
+			<h2>
+				<a href="#event">event</a>
+			</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			</p>
+		</div>
+	</div>
 </body>
-</html>
